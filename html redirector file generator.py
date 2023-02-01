@@ -12,10 +12,10 @@ html_template = """
 </html>
 """
 
-file_name = input("Enter the name of the HTML file (without the .html extension): ")
-redirect_url = input("Enter the URL you want to redirect to: ")
+file_name = input("Entrez le nom du fichier HTML (sans l'extension .html): ")
+redirect_url = input("Saisissez l'URL vers laquelle vous souhaitez rediriger les données: ")
 
 with open(f"{file_name}.html", "w", encoding="UTF-8") as file:
     file.write(html_template.format(url=redirect_url))
 
-print(f"The file '{file_name}.html' has been created and it redirects to '{redirect_url}'.")
+print(f"Le fichier '{file_name}.html' a été créé et il redirige versa été créé et il redirige vers '{redirect_url}'.")
